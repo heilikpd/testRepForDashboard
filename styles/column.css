@@ -1,0 +1,22 @@
+.column {
+  margin: 3vh 0;
+  flex-basis: 400px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: center;
+  margin: 5pt;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.column:first-child {
+  margin-left: 10pt;
+}
+.cards_container > div:first-child {
+  margin-top: 0;
+}
+.cards_container {
+  height: 100%;
+  overflow-y: auto;
+}

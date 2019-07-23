@@ -1,0 +1,62 @@
+.sidebar {
+  flex-basis: 300pt;
+  border-left: 5pt solid #f2f2f2;
+  background-color: #313131;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  transition: opacity linear 2000ms;
+}
+.sidebar--collapse {
+  opacity: 0;
+}
+.sidebar__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 10%;
+  /* border: 2px solid yellow; */
+  /* background: yellow; */
+  align-items: center;
+}
+.sidebar__header-text {
+  /* border: 2px solid red; */
+  margin-left: 40%;
+  color: white;
+}
+.close-button {
+  margin: 20px;
+  color: #000000;
+  font-weight: bold;
+  /* float: right; */
+  font-size: 40px;
+  line-height: 20px;
+  /* align-self: flex-end; */
+  /* justify-self: end; */
+  cursor: pointer;
+  transition: 0.3s;
+  /* background: red; */
+  color: white;
+
+  /* border: 2px solid red; */
+}
+.sidebar__card-container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-content: center;
+  flex-direction: column;
+  /* background: lightblue; */
+  /* border: 2px solid blue; */
+  flex-basis: 100%;
+  overflow-y: auto;
+  flex-wrap: nowrap;
+}
+.sidebar__card-container > div:first-child {
+  /* border: 2px solid red; */
+  margin-top: 0;
+}
+@media (max-width: 1000px) {
+  .sidebar {
+    flex-basis: 250pt;
+  }
+}

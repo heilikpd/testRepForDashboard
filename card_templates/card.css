@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
+body {
+  background: #f0f0f0;
+  font-family: "Montserrat", sans-serif;
+}
+.card {
+  border-radius: 2;
+  background: #ffffff;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15pt;
+}
+.card__title {
+  padding: 5pt 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card__title > h3 {
+  font-weight: 800;
+  color: #575757;
+}
+.cards {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
+}
+.card__module {
+  background: #f0f0f0;
+  padding: 9pt 7pt;
+  border-left: 5pt solid #575757;
+  color: #575757;
+}
+
+.card__module:hover {
+  background: #9ddcce;
+  padding: 9pt 7pt;
+  border-left: 5pt solid #00a79a;
+  color: #00a79a;
+  cursor: pointer;
+}
+.circle {
+  margin-left: 15pt;
+  border: 2pt solid red;
+  /* background: red; */
+  border-radius: 100%;
+  padding: 2pt;
+}

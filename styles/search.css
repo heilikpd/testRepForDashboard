@@ -1,0 +1,27 @@
+.search {
+  grid-area: search;
+  background-color: white;
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.search > input {
+  font-size: 17px;
+  flex-basis: 90%;
+  border: none;
+  position: relative;
+}
+.search > i {
+  font-size: 14pt;
+  color: #5a5a5a;
+  margin-right: 3pt;
+}
+@media (max-width: 1000px) {
+  .search > input {
+    font-size: 14px;
+    flex-basis: 70vw;
+    border: none;
+    position: relative;
+  }
+}

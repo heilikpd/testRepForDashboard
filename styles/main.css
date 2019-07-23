@@ -1,0 +1,8 @@
+.main {
+  /* height: 100%; */
+  flex-basis: 100%;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
